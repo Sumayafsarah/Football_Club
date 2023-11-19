@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football_Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("contextmenu",function(e){
+        e.preventDefault();
+      });</script>
 </head>
-<body class="lg:p-10 xl:p-12 2xl:">
+<body>
+<!-- <body class="lg:p-10 xl:p-12 2xl:"> -->
     <!-- navigation bar start -->
     <section class="navigation">
-        <nav class="flex items-center justify-between shadow px-6   " >
+        <nav class="flex items-center justify-between shadow px-6  py-2 " >
            <img class="w-36  ml-0 " style="filter: drop-shadow(0px 3px 2px rgb(58, 57, 57));" src="img/logo.png" alt="logo">
             <ul class=" gap-x-7 hidden md:flex">
                 <li class="text-xl text-gray-600 hover:text-lime-600  hover:scale-125 duration-500 "><a href="index.html"> হোম মেনু </a></li>
@@ -34,8 +39,8 @@
             <br> <p class="text-xs text-gray-600 md:text-lg">চ্যাম্পিয়ন তারা নয় যারা একবার খেলার মাঠে জয়ী হয়েই থেমে যায়। বরং তারাই প্রকৃত <br>চ্যাম্পিয়ন যারা হারের পর হার সহ্য করে শুধুমাত্র খেলায় জেতার জন্য</p>
         <br> <br>
             <div class="flex justify-center gap-x-7">
-            <button class="text-xl bg-lime-500 text-white px-6 py-2 border-current rounded-xl hover:border-lime-700 ">Donation</button>
-            <button class="text-xl border-solid border-2 px-4 py-1 border-current rounded-xl hover:border-lime-600 hover:text-lime-600">Hire Player</button>
+            <a href="fund.html" alt="refund_page"><button class="text-xl bg-lime-500 text-white px-6 py-2 border-current rounded-xl hover:border-lime-700 ">Donation</button></a>
+           <a href="hire.html" alt="hire_page"> <button class="text-xl border-solid border-2 px-4 py-1 border-current rounded-xl hover:border-lime-600 hover:text-lime-600">Hire Player</button></a>
         </div>
             
         </div>

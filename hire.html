@@ -5,25 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goshairhat_Football_Club</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("contextmenu",function(e){
+        e.preventDefault();
+      });</script>
 </head>
 <body class="">
     <!-- navigation bar start -->
-    <section class="navigation">
-        <nav class="flex items-center justify-between shadow px-4 py-6  " >
-           <img class="max-w-xs max-h-16 ml-0" src="img/logo.png" alt="logo">
-            <ul class=" gap-x-7 hidden md:flex">
-                <li class="text-xl text-gray-600 hover:text-sky-700  hover:scale-125 duration-500 "><a href="index.html"> হোম মেনু </a></li>
-                <li class="text-xl text-gray-600 hover:text-sky-700 hover:scale-125 duration-500"><a href="gallary.html" > গ্যালারি </a></li>
-                <li class="text-xl text text-gray-600 hover:text-sky-700 hover:scale-125 duration-500 "><a href="member_seial.html" >সদস্যদের তালিকা </a></li>
-                
-                <li class="text-xl text-gray-600 hover:text-sky-700 hover:scale-125 duration-500"><a href="fund.html" > অনুদান </a></li>
-            </ul>
-           <div >
-            <a href="hire.html" >
-            <button class="text-xl border-solid border-2 px-4 py-1 border-current rounded-xl hover:border-sky-700 hover:text-sky-700">  Hire Player </button></a>
-           </div>
-        </nav>
+    <nav class="flex items-center justify-between shadow px-6  py-2 " >
+        <img class="w-36  ml-0 " style="filter: drop-shadow(0px 3px 2px rgb(58, 57, 57));" src="img/logo.png" alt="logo">
+         <ul class=" gap-x-7 hidden md:flex">
+             <li class="text-xl text-gray-600 hover:text-lime-600  hover:scale-125 duration-500 "><a href="index.html"> হোম মেনু </a></li>
+             <li class="text-xl text-gray-600 hover:text-lime-600 hover:scale-125 duration-500"><a href="gallary.html" > গ্যালারি </a></li>
+             <li class="text-xl text text-gray-600 hover:text-lime-600 hover:scale-125 duration-500 "><a href="member_seial.html" >সদস্যদের তালিকা </a></li>
+             
+             <li class="text-xl text-gray-600 hover:text-lime-600 hover:scale-125 duration-700"><a href="fund.html" > অনুদান </a></li>
+         </ul>
+        <div>
+         <a href="hire.html" >
+         <button class="text-xl border-solid border-2 px-2 py-1 border-current rounded-xl hover:border-lime-700 hover:text-lime-600">  Hire Player </button></a>
+        </div>
+     </nav>
     </section>
-    
+    <!-- hero -->
+    <div class="px-6">
+        <h1 class="my-4 text-2xl md:text-3xl font-bold text-lime-600 ">আমাদের দলের সদস্যদের তালিকা</h1>
+        <p class="text-gray-600 font-thin">আমাদের দলের সদস্যদের তালিকা নিচে দেওয়া হলো। আপনি চাইলে কোন একজনকে নিয়ে আলাপ করতে পারেন।</p>
+    </div>
+    <section class="px-6">
+        <!-- card-1 -->
+      <div class="grid md:flex bg-white transition shadow-lg hover:shadow-xl my-5">
+        <img src="img/mitul.jpg" alt="মিতুল মার্মা" class=" h-44 w-max">
+        <div class="block items-center justify-center p-4 ">
+            <h1 class="text-lime-600 text-lg ">মিতুল মার্মা</h1>
+            <p class=" text-xs  py-2 font-semibold">গোলকিপার , উচ্চতা ৫.৭'</p>
+            <div class="md:flex py-2 text-xs font-semibold">
+                <P class="p-2 my-2 rounded-full  bg-gray-200 ">2018 SAFF অনূর্ধ্ব-15 চ্যাম্পিয়নশিপ</P>
+                <P class="p-2 my-2 rounded-full bg-gray-200 md:mx-2">BFF অনূর্ধ্ব-18 টুর্নামেন্ট</P>
+                <P class="p-2 my-2 rounded-full bg-gray-200 md:mx-2">মোহামেডান স্পোর্টিং</P>
+            </div>
+        </div>
+        
+      </div>
+      <!-- card-2 -->
+      <div class="grid md:flex bg-white transition shadow-lg hover:shadow-xl my-5">
+        <img src="img/faisal.jpeg" alt="ফয়সাল ফাহিম" class=" h-44 w-max">
+        <div class="block items-center justify-center p-4 ">
+            <h1 class="text-lime-600 text-lg ">মোহাম্মদ ফয়সাল আহমেদ ফাহিম</h1>
+            <p class=" text-xs  py-2 font-semibold">গোলকিপার , উচ্চতা ৫.৭'</p>
+            <div class="md:flex py-2 text-xs font-semibold">
+                <P class="p-2 my-2 rounded-full  bg-gray-200 ">এএফসি এশিয়ান কাপ</P>
+                <P class="p-2 my-2 rounded-full bg-gray-200 md:mx-2">আন্তর্জাতিক বন্ধুত্বপূর্ণ</P>
+                <P class="p-2 my-2 rounded-full bg-gray-200 md:mx-2">মাহিন্দা রাজাপাকসে কাপ</P>
+                <P class="p-2 my-2 rounded-full bg-gray-200 md:mx-2">দক্ষিণ এশিয়ান ফুটবল ফেডারেশন (সাফ) চ্যাম্পিয়নশিপ</P>
+            </div>
+        </div>
+      </div>
+    </section>
+<!-- footer -->
+    <footer class="flex justify-center items-center px-6 p-4 gap-4  md:justify-between" >
+        <div><img src="img/logo.png" class=" h-20 w-20 md:w-30 md:h-30"> </div>
+        <h1 class="flex text-gray-600 text-sm">© 2023 Official-<p class="font-semibold text-lime-700">@Sumaya</p></h1>
+    <div class="flex md:">
+        <img width="24" height="24" src="https://img.icons8.com/deco/48/facebook-new.png" alt="facebook-new"/>
+        <img width="24" height="24" src="https://img.icons8.com/deco/48/instagram-new.png" alt="instagram-new"/>
+        <img width="24" height="24" src="https://img.icons8.com/deco/24/twitter.png" alt="twitter"/>
+        <img width="24" height="24" src="https://img.icons8.com/plumpy/24/linkedin.png" alt="linkedin"/>
+    </div>
+    </footer>
 </body>
 </html>
